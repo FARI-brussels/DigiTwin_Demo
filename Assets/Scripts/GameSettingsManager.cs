@@ -193,10 +193,15 @@ public class GameSettingsManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        UpdateClock();
-        SwitchCursor();
-        SwitchGameMenu();
+        // UpdateClock();
+        // SwitchCursor();
+        // SwitchGameMenu();
         GetNewKey();
+
+        // Lock cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        // Hide cursor
+        Cursor.visible = false;
     }
 
     // Initializate parameters
@@ -436,6 +441,7 @@ public class GameSettingsManager : MonoBehaviour
         if (!Input.GetKeyDown(_menuKey))
             // Break action
             return;
+
         // Switch state
         switch (_curGameState)
         {

@@ -16,9 +16,9 @@ public class CameraMovement : MonoBehaviour
     internal KeyCode MoveSlower;
     // Factors
     // 100 - low sensitivity, 200 - medium sensitivity, 300 - high sensitivity
-    private float CameraSensitivity = 200f;
+    private float CameraSensitivity = 100f;
     private float ClimbSpeed = 5f;
-    private float NormalMoveSpeed = 10f;
+    private float NormalMoveSpeed = 3f;
     private float SlowMoveFactor = 0.25f;
     private float FastMoveFactor = 4f;
     // Rotation
